@@ -8,28 +8,31 @@ body {
 
 header {
   background-color: blanchedalmond;
+  background: linear-gradient( #7ff1ff, blanchedalmond);
+}
+
+/* Change the nav element to use 
+inline-block and have a width of about 80%. */
+nav {
+  display; inline-block;
+  width: 80%; 
+  margin: auto;
   text-align: center;
 }
 
-nav {
-  background-color: #7ff1ff;
-  background: linear-gradient( #7ff1ff, blanchedalmond);
-
-  /* text-align: center; */
-}
-
-nav a {
+nav p {
   text-decoration: none;
   font-size: 22px;
-
-  
-  /* padding: 3px;
-  border: 2px solid #000; */
+  display: inline-block;
+  padding: 0 30px 0 20px;
 }
 
+
+/* Use a descendent selector to style 
+only the image in the nav to have a width 
+of about 10%. */
 nav img {
   width: 10%;
-  /* display: inline-block; */
 }
 
 
@@ -43,18 +46,18 @@ footer {
   text-align: center;
 }
 
-ul {
+/* ul {
   list-style-type: none;
-  /* display: inline-block; */
-
-  /* display: flex; */
+  display: inline-block;
   justify-content: space-around;
-}
+} */
 
-nav li {
+/* Comment out the existing styling 
+for the li element. */
+/* nav li {
   display: inline-block;
   padding: 0 30px 0 30px;
-}
+} */
 
 
 h1 {
@@ -69,30 +72,43 @@ p {
   line-height: 100%;
 }
 
+/* Photo borders */
 img {
   border: 5px outset rgb(80, 195, 80);
   padding: 3px;
   background-color: #fff;
 }
 
-.current a {
+.current {
+  text-decoration: none;
   color: rgb(129, 125, 125);
   text-transform: uppercase;
   font-size: 16px;
 }
 
+/* Style the grid class to use a 
+two column grid where each column is 
+approximately 40%. */
 .grid-photos {
   padding: 10px 0 10px 0;
   display: grid;
   grid-template-columns: 40% 40%;
   justify-content: space-around;
+  align-items: center;
   row-gap: 10px;
 }
 
+/* Use the descendent selector to style 
+only the images in the grid class to have 
+a width of 100%. */
 .grid-photos img {
   width: 100%;
 }
 
+
+/* Style the flex class to use flex.  
+Play with the flex-wrap and justify-content 
+property values to copy the look of the screenshots above. */
 .flex-photos {
   display: flex;
   flex-wrap: wrap;
